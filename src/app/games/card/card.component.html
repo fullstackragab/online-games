@@ -1,0 +1,17 @@
+<div class="container">
+
+  <!-- <div class="title">
+    {{ game.title }}
+  </div> -->
+  <!-- <div *ngIf='game.tag' class="tag" [ngClass]="{hot:game.tag === 'hot', trending: game.tag === 'trending'}">{{ game.tag }}
+  </div> -->
+  <div class="image">
+    <a [href]="game.startUrl" target="_blank"><img *ngIf='game.thumb' [src]='game.thumb.url'></a>
+  </div>
+  <div class="content">
+    <div class="provider">{{ game.providerName }}</div>
+    <div class="title">{{ game.title }}</div>
+  </div>
+
+
+</div>
